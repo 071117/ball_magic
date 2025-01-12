@@ -21,12 +21,12 @@ continuation = input()
 while continuation.capitalize() == 'Да' or continuation.capitalize() == 'Yes' or continuation[-1] == '?':
     if continuation[-1] == '?':
         print(answer())
-        print('Напишите "Да", если хотите узнать истину')
+        print('Напишите "Да", если хотите узнать истину или сразу задайте вопрос!')
         continuation = input()
     else:
         print('Тогда задайте вопрос!')
         question = input()
         print(answer())
-        print('Напишите "Да", если хотите узнать истину')
+        print('Напишите "Да", если хотите узнать истину или сразу задайте вопрос!')
         continuation = input()
 print('Вы еще вернетесь..)')
